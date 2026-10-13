@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+reviews:
+  profile: chill
+  high_level_summary: true
+  high_level_summary_placeholder: '@coderabbitai summary'
+  high_level_summary_instructions: 'Describe the concrete user or team impact, key changes, and any deployment or migration steps. Do not claim tests passed unless evidence is present.'
+  review_status: true
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 0
+    drafts: true
+    base_branches: ['.*']
+    ignore_title_keywords: []
+  path_instructions:
+    - path: 'src/**'
+      instructions: 'Check accessibility, demo data labeling, working empty/error states, and behavior-based tests. Keep this starter straightforward.'
+    - path: '.github/**'
+      instructions: 'Check least-privilege permissions, immutable action pins, untrusted PR handling, required quality gates, and deployment only after passing checks.'
+chat:
+  auto_reply: true

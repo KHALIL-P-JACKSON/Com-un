@@ -1,0 +1,15 @@
+name: Feature request
+description: Suggest a way to help the community
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Who needs this and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed outcome
+    validations:
+      required: true
