@@ -10,4 +10,4 @@ Pre-commit formats and lints staged files. Pre-push runs `npm run check`. Hooks 
 
 Use sample content without presenting it as verified. The current listings do not represent actual events, employers, or internship offers. Keep category labels visible, map discovery accessible through its list, and controls usable by keyboard. Browser saves are local, not accounts.
 
-Update CODEOWNERS as the team grows. Ask for review, resolve conversations, and merge only after `Quality gate` passes. For the first solo-maintainer phase, the ruleset's one-review requirement may need an explicit team decision; GitHub authors cannot approve their own PRs.
+Update CODEOWNERS as the team grows. Ask for review, resolve conversations, and merge only after `Quality gate` passes. The initial ruleset requires PRs and CI but leaves human approvals at zero for solo development. Increase required approvals to one when another maintainer joins; GitHub authors cannot approve their own PRs.

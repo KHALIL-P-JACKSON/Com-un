@@ -9,6 +9,10 @@ updates:
       timezone: America/New_York
     open-pull-requests-limit: 5
     groups:
+      vitest:
+        patterns: ['vitest', '@vitest/*']
+      react:
+        patterns: ['react', 'react-dom', '@types/react', '@types/react-dom']
       development:
         dependency-type: development
         update-types: [minor, patch]
